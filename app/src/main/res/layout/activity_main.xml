@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide1"
+        android:scrollbarSize="25sp"
+        android:max="255"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide2"
+        android:layout_below="@id/slide1"
+        android:scrollbarSize="25sp"
+        android:max="255"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide3"
+        android:layout_below="@id/slide2"
+        android:scrollbarSize="25sp"
+        android:max="255"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/szin1"
+        android:layout_below="@id/slide3"
+        android:text="Red:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/szin2"
+        android:layout_below="@id/szin1"
+        android:text="Green:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/szin3"
+        android:layout_below="@id/szin2"
+        android:text="Blue:"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/szinkep"
+       android:layout_below="@id/szin3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/szam"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="(0,0,0)"/>
+
+</RelativeLayout>
